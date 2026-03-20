@@ -1,90 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ley de Ohm y Ley de Watt</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Martín Soler</title>
 </head>
 
 <body>
-
-<h1>Ley de Ohm y Ley de Watt</h1>
-
-<hr>
-
-<h2>Ley de Ohm</h2>
-
-<p>
-La Ley de Ohm establece la relación entre el voltaje, la corriente y la resistencia en un circuito eléctrico.
-Fue formulada por el físico alemán Georg Simon Ohm.
-</p>
-<img src="https://cdn.todamateria.com/imagenes/ley-de-ohm1-0-cke-edited-1.jpg"/>
-
-<h3>Fórmula</h3>
-
-<p><b>V = I &middot; R</b></p>
-
-<ul>
-<li>V = Voltaje (Voltios)</li>
-<li>I = Corriente (Amperios)</li>
-<li>R = Resistencia (Ohmios)</li>
-</ul>
-
-<h2>Ley de Watt</h2>
-
-<p>
-La Ley de Watt permite calcular la potencia eléctrica en un circuito.
-Relaciona el voltaje y la corriente.
-</p>
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZmu781jUk_kpezfYcO8f7zc0z_VkYqo4PltQOSTGy09qAATiJNujnIxP65PoQhNNEwDEzooeZ_PLReFMlSCIuc3LklsLpJYX_FGrRhop51YITPsYHyAGb2cELGZ9OHNx0dkvzn3ZKQipt/s1600/2.png" width="560" height="337"/>
-
-
-<h3>Fórmula</h3>
-
-<p><b>P = V &middot; I</b></p>
-
-<ul>
-<li>P = Potencia (Watts)</li>
-<li>V = Voltaje (Voltios)</li>
-<li>I = Corriente (Amperios)</li>
-</ul>
-
-<hr>
-
-<h2>Conclusión</h2>
-
-<p>
-La Ley de Ohm y la Ley de Watt son fundamentales en la electricidad y la electrónica,
-ya que permiten calcular valores importantes en los circuitos eléctricos como voltaje,
-corriente, resistencia y potencia.
-</p>
-
-<hr>
-
-<h2>Efecto Joule</h2>
-
-<p> El efecto Joule es el fenómeno físico por el cual la energía eléctrica se transforma en calor cuando una corriente eléctrica circula por un conductor que tiene resistencia.</p>
-
-<h3>Explicación Sencilla</h3>
-<p>
-Cuando la corriente eléctrica pasa por un material (como un cable metálico), los electrones se mueven a través del conductor.</p> 
-<p>Durante ese movimiento, chocan con los átomos del material.
-</p>
-Estos choques producen energía térmica, es decir, calor.
-Por eso los cables o resistencias se calientan cuando pasa corriente eléctrica.</p>
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfxPcgNoVcotPucNcEzG-rWOh5TTk_eIrDMg&s" width="278" height="181">
-
-<h3>Fórmula del efecto Joule</h3>
-
-<p><b>Q = I<sup>2</sup> &middot; R &middot; t </b></p>
-
-<ul>
    
-<li>Q = calor generado (en joules, J)</li>
-<li>I = corriente eléctrica (en amperios, A)</li>
-<li>R = resistencia del conductor (en ohmios, Ω)</li>
-<li>t = tiempo que circula la corriente (en segundos, s)</li>
-</ul>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://jarudev.github.io/itcts4z/">
+            <img src="img/logo etitc.png" alt="Logo">ELECTRÓNICA MARTIN</a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#ley-de-ohm">Ley de Ohm</a></li>
+            <li><a href="#ley-de-Watt">Ley de Watt</a></li>
+            <li><a href="#efecto-joule">Efecto Joule</a></li>
+        </ul>
+    </nav>
+    
+    <section class="container">
+        <article>
+            <h2 id="ley-de-ohm">Ley de Ohm</h2>
+            <p>La Ley de Ohm establece la relación entre el voltaje,<br>
+                la corriente y la resistencia en un circuito eléctrico. <br>
+            Fue formulada por el físico alemán Georg Simon Ohm.</p>
+            <img src="https://cdn.todamateria.com/imagenes/ley-de-ohm1-0-cke-edited-1.jpg" />
+            <h3>Fórmula</h3>
+            <p><b>V = I &middot; R</b></p>
+            <ul>
+            <li>V = Voltaje (Voltios)</li>
+            <li>I = Corriente (Amperios)</li>
+            <li>R = Resistencia (Ohmios)</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2 id="ley-de-Watt">Ley de Watt</h2>
+            
+            <p>
+            La Ley de Watt permite calcular la potencia eléctrica en un circuito.
+            Relaciona el voltaje y la corriente.
+            </p>
+            <img src="img\2-Photoroom.png" width="560"/>
 
 
+            <h3>Fórmula</h3>
+
+            <p><b>P = V &middot; I</b></p>
+
+            <ul>
+            <li>P = Potencia (Watts)</li>
+            <li>V = Voltaje (Voltios)</li>
+            <li>I = Corriente (Amperios)</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2 id="efecto-joule">Efecto Joule</h2>
+
+            <p> El efecto Joule es el fenómeno físico por el cual la energía eléctrica se transforma en calor cuando una corriente eléctrica circula por un conductor que tiene resistencia.</p>
+
+            <h3>Explicación Sencilla</h3>
+            <p>
+            Cuando la corriente eléctrica pasa por un material (como un cable metálico), los electrones se mueven a través del conductor.</p> 
+            <p>Durante ese movimiento, chocan con los átomos del material.
+            </p>
+            <p>Estos choques producen energía térmica, es decir, calor.
+            Por eso los cables o resistencias se calientan cuando pasa corriente eléctrica.</p>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfxPcgNoVcotPucNcEzG-rWOh5TTk_eIrDMg&s" width="400" >
+
+            <h3>Fórmula del efecto Joule</h3>
+
+            <p><b>Q = I<sup>2</sup> &middot; R &middot; t </b></p>
+
+            <ul>
+            
+            <li>Q = calor generado (en joules, J)</li>
+            <li>I = corriente eléctrica (en amperios, A)</li>
+            <li>R = resistencia del conductor (en ohmios, Ω)</li>
+            <li>t = tiempo que circula la corriente (en segundos, s)</li>
+            </ul>
+        </article>
+    </section>
+    <footer></footer>
 </body>
 </html>
