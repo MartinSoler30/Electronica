@@ -26,79 +26,18 @@
         </label>
 
         <ul class="nav-links">
-            <li><a href="#ley-de-ohm">Ley de Ohm</a></li>
-            <li><a href="#ley-de-Watt">Ley de Watt</a></li>
-            <li><a href="#efecto-joule">Efecto Joule</a></li>
-            <li><a href="fundamentos.html">Fundamentos</a></li>
-           
+            <li><a href="index.html">Volver</a></li>
+            <li><a href="#fundamentos">Fundamentos</a></li>
+            <li><a href="#flujo">Flujo</a></li>
+            <li><a href="#circuitos">Circuitos</a></li>
+            <li><a href="#magnitudes">Magnitudes</a></li>
+            <li><a href="#diferencia">Electricidad vs Electrónica</a></li>
+            <li><a href="#aplicacion">Aplicación</a></li>
         </ul>
     </nav>
     
     <section class="container">
-        <article>
-            <h2 id="ley-de-ohm">Ley de Ohm</h2>
-            <p>La Ley de Ohm establece la relación entre el voltaje,<br>
-                la corriente y la resistencia en un circuito eléctrico. <br>
-            Fue formulada por el físico alemán Georg Simon Ohm.</p>
-            <img src="https://cdn.todamateria.com/imagenes/ley-de-ohm1-0-cke-edited-1.jpg" />
-            <h3>Fórmula</h3>
-            <p><b>V = I &middot; R</b></p>
-            <ul>
-            <li>V = Voltaje (Voltios)</li>
-            <li>I = Corriente (Amperios)</li>
-            <li>R = Resistencia (Ohmios)</li>
-            </ul>
-        </article>
-
-        <article>
-            <h2 id="ley-de-Watt">Ley de Watt</h2>
-            
-            <p>
-            La Ley de Watt permite calcular la potencia eléctrica en un circuito.
-            Relaciona el voltaje y la corriente.
-            </p>
-            <img src="2-Photoroom.png" width="560"/>
-
-
-            <h3>Fórmula</h3>
-
-            <p><b>P = V &middot; I</b></p>
-
-            <ul>
-            <li>P = Potencia (Watts)</li>
-            <li>V = Voltaje (Voltios)</li>
-            <li>I = Corriente (Amperios)</li>
-            </ul>
-        </article>
-
-        <article>
-            <h2 id="efecto-joule">Efecto Joule</h2>
-
-            <p> El efecto Joule es el fenómeno físico por el cual la energía eléctrica se transforma en calor cuando una corriente eléctrica circula por un conductor que tiene resistencia.</p>
-
-            <h3>Explicación Sencilla</h3>
-            <p>
-            Cuando la corriente eléctrica pasa por un material (como un cable metálico), los electrones se mueven a través del conductor.</p> 
-            <p>Durante ese movimiento, chocan con los átomos del material.
-            </p>
-            <p>Estos choques producen energía térmica, es decir, calor.
-            Por eso los cables o resistencias se calientan cuando pasa corriente eléctrica.</p>
-
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfxPcgNoVcotPucNcEzG-rWOh5TTk_eIrDMg&s" width="400" >
-
-            <h3>Fórmula del efecto Joule</h3>
-
-            <p><b>Q = I<sup>2</sup> &middot; R &middot; t </b></p>
-
-            <ul>
-            
-            <li>Q = calor generado (en joules, J)</li>
-            <li>I = corriente eléctrica (en amperios, A)</li>
-            <li>R = resistencia del conductor (en ohmios, Ω)</li>
-            <li>t = tiempo que circula la corriente (en segundos, s)</li>
-            </ul>
-        </article>
-
+        
         <!-- FUNDAMENTOS -->
         <article>
             <h2 id="fundamentos">Fundamentos</h2>
@@ -168,21 +107,110 @@
         <!-- APLICACIÓN -->
         <article>
             <h2 id="aplicacion">Aplicación: Cargador de celular</h2>
-        
+            
             <p><b>¿Qué cambia?</b> El voltaje se reduce de 110/220V a 5V.</p>
-        
+            
             <p><b>¿Por qué?</b> Porque el celular necesita bajo voltaje para funcionar sin dañarse.</p>
-        
+            
             <p><b>Voltaje:</b> está en la salida del cargador.</p>
-        
+            
             <p><b>Corriente:</b> circula por el cable hacia el celular.</p>
-        
+            
             <p><b>Resistencia:</b> está en los componentes internos del cargador.</p>
-        
+            
             <p><b>Tipo:</b> se usan electricidad (energía) y electrónica (control).</p>
-        
+            
             <p><b>Calor:</b> parte de la energía se transforma en calor (efecto Joule).</p>
         </article>
+        
+        <!-- PREDICCIÓN VISUAL -->
+        
+        <div class="panel-circuito">
+            <h2 id="Predicción visual">Predicción visual</h2>
+
+            <svg viewBox="0 0 600 420">
+    
+                <!-- Cables -->
+                <path d="M130 300 L130 120 Q130 80 170 80 L430 80 Q470 80 470 120 L470 300"
+                        fill="none"
+                        stroke="#2d2d2d"
+                        stroke-width="8"
+                        stroke-linecap="round"/>
+    
+                <!-- Pila -->
+                <line x1="250" y1="300" x2="250" y2="360"
+                        stroke="#222"
+                        stroke-width="8"/>
+    
+                <line x1="320" y1="285" x2="320" y2="375"
+                        stroke="#222"
+                        stroke-width="14"/>
+    
+                <!-- Conexiones -->
+                <line x1="130" y1="300" x2="250" y2="300"
+                        stroke="#2d2d2d"
+                        stroke-width="8"/>
+    
+                <line x1="320" y1="300" x2="470" y2="300"
+                        stroke="#2d2d2d"
+                        stroke-width="8"/>
+    
+                <!-- Signos -->
+                <text x="336" y="390"
+                        font-size="32"
+                        fill="#cc0000"
+                        font-weight="bold">+</text>
+    
+                <text x="230" y="390"
+                        font-size="32"
+                        fill="#0066ff"
+                        font-weight="bold">−</text>
+    
+                <!-- Bombillo -->
+                <g class="glow">
+                    <circle cx="300" cy="80" r="38"
+                            fill="#ffd84d"
+                            stroke="#c9a100"
+                            stroke-width="6"/>
+    
+                    <!-- Filamento -->
+                    <path d="M280 80 Q290 65 300 80 Q310 95 320 80"
+                            fill="none"
+                            stroke="#7a4b00"
+                            stroke-width="4"/>
+    
+                    <!-- Base -->
+                    <rect x="286" y="118" width="28" height="20"
+                            rx="4"
+                            fill="#888"/>
+                </g>
+    
+                <!-- Esferas azules: Sentido real -->
+                <circle class="electron" r="7" fill="#1f7aff"/>
+                <circle class="electron delay1" r="7" fill="#1f7aff"/>
+                <circle class="electron delay2" r="7" fill="#1f7aff"/>
+    
+                <!-- Esferas rojas: Sentido convencional -->
+                <circle class="convencional" r="7" fill="#ff4040"/>
+                <circle class="convencional delay3" r="7" fill="#ff4040"/>
+                <circle class="convencional delay4" r="7" fill="#ff4040"/>
+    
+            </svg>
+    
+            <div class="leyenda">
+                <div class="item">
+                    <div class="bola azul"></div>
+                    <span>Sentido Real (electrones)</span>
+                </div>
+    
+                <div class="item">
+                    <div class="bola roja"></div>
+                    <span>Sentido Convencional</span>
+                </div>
+            </div>
+    
+        </div>
+        
     </section>
     <footer></footer>
 </body>

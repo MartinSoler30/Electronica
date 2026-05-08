@@ -207,6 +207,94 @@ section article h2, section article h3, section article p {
     margin: 1rem;   
 }
 
+.panel-circuito{
+    flex:1;
+    min-width:420px;
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
 
- 
+.leyenda{
+    display:flex;
+    gap:20px;
+    margin-top:15px;
+    flex-wrap:wrap;
+}
+
+.item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:0.95rem;
+}
+
+.bola{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+}
+
+.azul{
+    background:#1f7aff;
+}
+
+.roja{
+    background:#ff4040;
+}
+
+svg{
+    width:100%;
+    height:auto;
+}
+
+/* Resplandor del bombillo */
+.glow{
+    animation: glow 1.6s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        filter: drop-shadow(0 0 6px rgba(255,210,50,0.5));
+    }
+    to{
+        filter: drop-shadow(0 0 20px rgba(255,210,50,1));
+    }
+}
+
+/* Movimiento de partículas */
+.electron{
+    offset-path: path("M 130 300 L 130 120 Q 130 80 170 80 L 430 80 Q 470 80 470 120 L 470 300");
+    animation: moveElectron 5s linear infinite;
+}
+
+.convencional{
+    offset-path: path("M 470 300 L 470 120 Q 470 80 430 80 L 170 80 Q 130 80 130 120 L 130 300");
+    animation: moveConv 5s linear infinite;
+}
+
+@keyframes moveElectron{
+    from{
+        offset-distance:0%;
+    }
+    to{
+        offset-distance:100%;
+    }
+}
+
+@keyframes moveConv{
+    from{
+        offset-distance:0%;
+    }
+    to{
+        offset-distance:100%;
+    }
+}
+
+.delay1{ animation-delay: -1s; }
+.delay2{ animation-delay: -2s; }
+.delay3{ animation-delay: -3s; }
+.delay4{ animation-delay: -4s; }
+
 
