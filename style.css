@@ -1,6 +1,6 @@
 html {
-  font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
@@ -93,6 +93,54 @@ body {
 .logo a:hover {
     box-shadow: 0 5px 10px rgba(255, 95, 31, 1);
     transition: all 0.3s ease;
+}
+
+.btn-info{
+    background:#ff5f1f;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s ease;
+}
+
+.btn-info:hover{
+    transform:scale(1.05);
+    box-shadow:0 5px 15px rgba(255,95,31,0.6);
+}
+
+img{
+    max-width:100%;
+    border-radius:12px;
+    margin-top:15px;
+}
+
+/* ========================= */
+/* BOMBILLO INTERACTIVO */
+/* ========================= */
+
+#bombillo{
+
+    width:120px;
+    height:120px;
+
+    background:yellow;
+
+    border-radius:50%;
+
+    margin-top:20px;
+
+    box-shadow:0 0 40px yellow;
+
+    transition:0.3s ease;
+}
+
+#sliderBrillo{
+
+    width:100%;
+    margin-top:20px;
 }
 
 @media(max-width: 768px) {
